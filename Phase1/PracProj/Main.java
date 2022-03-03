@@ -94,33 +94,34 @@ public class Main {
 
 	private static void searchExpenses(ArrayList<Integer> arrayList) {
 		int leng = arrayList.size();
-		arrayList = new ArrayList<Integer>();
-
-		ArrayList<Integer> expenses = new ArrayList<Integer>();
-		expenses.add(1000);
-		expenses.add(2300);
-		expenses.add(45000);
-		expenses.add(32000);
-		expenses.add(110);
-
-		System.out.println("Enter the expense you need to search:\t");
 		Scanner sc = new Scanner(System.in);
-
-		int ab = sc.nextInt();
-		System.out.println(expenses.contains(ab));
+		System.out.println("Enter");
+		int a=sc.nextInt();
+		System.out.println(arrayList.contains(a));
+		/*
+		 * arrayList = new ArrayList<Integer>();
+		 * 
+		 * ArrayList<Integer> expenses = new ArrayList<Integer>(); expenses.add(1000);
+		 * expenses.add(2300); expenses.add(45000); expenses.add(32000);
+		 * expenses.add(110);
+		 * 
+		 * System.out.println("Enter the expense you need to search:\t"); Scanner sc =
+		 * new Scanner(System.in);
+		 * 
+		 * int ab = sc.nextInt(); System.out.println(expenses.contains(ab));
+		 */
 
 	}
 
 	private static void sortExpenses(ArrayList<Integer> arrayList) {
-		// int arrlength = arrayList.size();
-		ArrayList<Integer> expenses = new ArrayList<Integer>();
-		expenses.add(1000);
-		expenses.add(2300);
-		expenses.add(45000);
-		expenses.add(32000);
-		expenses.add(110);
-		Collections.sort(expenses);
-		System.out.println(expenses);
-		// Complete the method. The expenses should be sorted in ascending order.
+		
+		/*
+		 * ArrayList<Integer> expenses = new ArrayList<Integer>(); expenses.add(1000);
+		 * expenses.add(2300); expenses.add(45000); expenses.add(32000);
+		 * expenses.add(110);
+		 */
+		Collections.sort(arrayList);
+		System.out.println(arrayList);
+		
 	}
 }

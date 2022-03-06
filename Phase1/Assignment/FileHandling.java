@@ -13,6 +13,33 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class FileHandling {
+	static class MenuOptions {
+
+		public static void WelcomeScreen() {
+			
+			System.out.println("Welcome to Locked Me which is developed by Amal\n");
+
+			System.out.println("You can retrieve all file names, search, add, or delete files\n");
+		}
+
+		public static void displayMenu() {
+			String menu = "\nSelect \n"
+					+ "1 to Retrieve all files inside folder\n"
+					+ "2 to Display menu for File operations\n" + "3 to Exit program\n";
+			System.out.println(menu);
+
+		}
+
+		public static void FileMenu() {
+			String fileMenu = "\nSelect \n"
+					+ "1 to Add a file\n"
+					+ "2 to Delete a file\n"
+					+ "3 to Search for a file\n" + "4 to Show Previous Menu\n";
+
+			System.out.println(fileMenu);
+		}
+
+	}
 	public static void createFile(String folderName) {
 		File file = new File(folderName);
 
@@ -140,33 +167,7 @@ public class FileHandling {
 		}
 	}
 
-	static class MenuOptions {
-
-		public static void WelcomeScreen() {
-			
-			System.out.println("Welcome to Locked Me which is developed by Amal\n");
-
-			System.out.println("You can retrieve all file names, search, add, or delete files\n");
-		}
-
-		public static void displayMenu() {
-			String menu = "\nSelect \n"
-					+ "1 to Retrieve all files inside folder\n"
-					+ "2 to Display menu for File operations\n" + "3 to Exit program\n";
-			System.out.println(menu);
-
-		}
-
-		public static void FileMenu() {
-			String fileMenu = "\nSelect \n"
-					+ "1 to Add a file\n"
-					+ "2 to Delete a file\n"
-					+ "3 to Search for a file\n" + "4 to Show Previous Menu\n";
-
-			System.out.println(fileMenu);
-		}
-
-	}
+	
 
 	static class HandleOptions {
 		public static void WelcomeScreen() {

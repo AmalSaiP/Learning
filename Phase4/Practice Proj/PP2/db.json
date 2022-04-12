@@ -1,0 +1,22 @@
+{
+  "deals": [
+    {
+      "client": "Microsoft",
+      "project": "Apollo Project",
+      "cost": "1000",
+      "id": 1
+    },
+    {
+      "client": "Intel",
+      "project": "Hermes Project",
+      "cost": "2000",
+      "id": 2
+    },
+    {
+      "client": "Apple",
+      "project": "Zeus Project",
+      "cost": "3000",
+      "id": 3
+    }
+  ]
+}
